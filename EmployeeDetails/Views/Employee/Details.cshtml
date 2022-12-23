@@ -1,0 +1,50 @@
+﻿@model EmployeeDetails.Models.tblEmployeeInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblEmployeeInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpDept)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpDept)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
